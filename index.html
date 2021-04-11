@@ -16,9 +16,32 @@
     <header>
 
         <!-- navbar -->
-        <nav>
-            
-        </nav>
+            <nav id="bg-grey" class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="raw">
+                        <div class="col-sm-4">
+                            <div class="navbar-header">
+                              <button id="burger-icon" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="txt-white navbar-brand" href="#">START BOOTSTRAP</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-3 col-lg-offset-5">
+                            <div id="navbar" class="scollapse navbar-collapse">
+                              <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">PORTFOLIO</a></li>
+                                <li><a href="#">ABOUT</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </nav>
         <!-- /navbar -->
 
         <!-- jumbotron -->
@@ -39,25 +62,25 @@
         <!-- portfolio -->
         <section id="portfolio">
             <article class="container">
+                <h4>portfolio</h4>
+                <hr><i class="fas fa-star"></i><hr>
                 <div class="row">
-                    <h4>portfolio</h4>
-                    <hr><i class="fas fa-star"></i><hr>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <img src="img/cabin.png" alt="cabin">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <img src="img/cake.png" alt="cake">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <img src="img/circus.png" alt="circus">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <img src="img/game.png" alt="game">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <img src="img/safe.png" alt="safe">
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
                         <img src="img/submarine.png" alt="submarine">
                     </div>
                 </div>
@@ -68,20 +91,21 @@
         <!-- about -->
         <section id="bg-green" class="txt-white">
             <article class="container">
-                <div class="row">
-                    <h4>about</h4>
-                    <hr><i class="fas fa-star"></i><hr>
-                    <div id="about" class="col-xs-12">
+                <h4>about</h4>
+                <hr><i class="fas fa-star"></i><hr>
+                <div class="row mb-30">
+                    <div id="about" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-2">
                         <p>
                             Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML , CSS, and JavaScript as well as optional LESS stylesheets for easy customization. 
                         </p>
                     </div>
-                    <div id="about" class="col-xs-12">
+                    <div id="about" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                         <p>
                             Whether you're a student looking to showcase you work, a professional looking to attract clients, or a graphic artist looking to share your projects, this themplate is the perfect starting point! 
                         </p>
                     </div>
                 </div>
+                <a class="btn mb-30" href="#"><span class="glyphicon glyphicon-save"></span>Download</a>
             </article>
         </section>
         <!-- /about -->
@@ -89,7 +113,25 @@
         <!-- contact me -->
         <section>
             <article>
-                
+                <h4>Contact me</h4>
+                <hr><i class="fas fa-star"></i><hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-8 col-xs-offset-2">
+                            <form id="about">
+                                <label for="name">Name</label><br>
+                                <input type="text" id="name" name="name" required><br>
+                                <label for="email">Email Adress</label><br>
+                                <input type="email" id="email" name="email" required><br>
+                                <label for="phone-number">Phone Number</label><br>
+                                <input type="number" id="phone-number" name="phone-number" required><br>
+                                <label for="message">Message</label><br>
+                                <textarea name="message" id="message" cols="30" rows="5"></textarea><br>
+                                <a class="btn" href="#">Send</a>
+                              </form>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
         <!-- /contact me -->
@@ -98,17 +140,47 @@
     <!-- /main -->
 
     <!-- footer -->
-    <footer>
-
-        
+    <footer class="txt-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <h5>LOCATION</h5>
+                    <h5>2215 John Daniel Drive Clark, MO 54243</h5>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <h5>AROUND THE WEB</h5>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="col-xs-12 col-sm-3">
+                    <h5>ABOUT FREELANCER</h5>
+                    <p>
+                        Freelance is a free to use, open source Bootstrap theme created by <span id="txt-green">Start Bootstrap</span>. 
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- /footer -->
     
     <!-- copyright -->
-    <div id="copyright">
-
+    <div id="copyright" class="txt-white">
+        <h6>Copyright Yor Website 2019</h6>
     </div>
     <!--/copyright -->
-    
+
 </body>
 </html>
