@@ -16,39 +16,33 @@
     <header>
 
         <!-- navbar -->
-            <nav id="bg-grey" class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                    <div class="raw">
-                        <div class="col-sm-4">
+            <nav id="ms_navbar" class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
                             <div class="navbar-header">
                               <button id="burger-icon" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                                 <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
+                                <span id="burger-icon" class="icon-bar"></span>
+                                <span id="burger-icon" class="icon-bar"></span>
+                                <span id="burger-icon" class="icon-bar"></span>
                               </button>
-                              <a class="txt-white navbar-brand" href="#">START BOOTSTRAP</a>
+                              <a class="ms-navbar navbar-brand navbar-left" href="#">START BOOTSTRAP</a>
                             </div>
-                        </div>
-                        <div class="col-sm-5 col-sm-offset-3 col-md-4 col-md-offset-4 col-lg-3 col-lg-offset-5">
-                            <div id="navbar" class="scollapse navbar-collapse">
-                              <ul class="nav navbar-nav">
+                            <div id="navbar" class="collapse navbar-collapse navbar-right">
+                              <ul class="ms-navbar nav navbar-nav">
                                 <li class="active"><a href="#">PORTFOLIO</a></li>
                                 <li><a href="#">ABOUT</a></li>
                                 <li><a href="#">CONTACT</a></li>
                               </ul>
                             </div>
-                        </div>
-                    </div>
                 </div>
-              </nav>
+            </nav>
         <!-- /navbar -->
 
         <!-- jumbotron -->
-        <div id="bg-green" class="jumbotron txt-white">
-            <img id=small-img src="img/avatar.svg" alt="avatar">
+        <div id="jumbotron">
+            <img src="img/avatar.svg" alt="avatar">
             <h1>start bootstrap</h1>
-            <hr class="txt-white"><i class="fas fa-star"></i><hr>
+            <hr><i class="fas fa-star"></i><hr>
             <h6>graphic artist - web designer - illustrator</h6>
         </div>
         <!--/jumbotron -->
@@ -89,36 +83,36 @@
         <!-- /portfoglio -->
 
         <!-- about -->
-        <section id="bg-green" class="txt-white">
+        <section id="about">
             <article class="container">
                 <h4>about</h4>
                 <hr><i class="fas fa-star"></i><hr>
-                <div class="row mb-30">
-                    <div id="about" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-2">
+                <div id="paragraph" class="row">
+                    <div class="text-left col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-2">
                         <p>
                             Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML , CSS, and JavaScript as well as optional LESS stylesheets for easy customization. 
                         </p>
                     </div>
-                    <div id="about" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
+                    <div id="paragraph" class="text-left col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-0">
                         <p>
                             Whether you're a student looking to showcase you work, a professional looking to attract clients, or a graphic artist looking to share your projects, this themplate is the perfect starting point! 
                         </p>
                     </div>
                 </div>
-                <a class="btn mb-30" href="#"><span class="glyphicon glyphicon-save"></span>Download</a>
+                <a class="btn mt-20" href="#"><span class="glyphicon glyphicon-save"></span>Download</a>
             </article>
         </section>
         <!-- /about -->
 
         <!-- contact me -->
-        <section>
+        <section id="contact_me">
             <article>
                 <h4>Contact me</h4>
                 <hr><i class="fas fa-star"></i><hr>
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2">
-                            <form id="about">
+                            <form class="text-left">
                                 <label for="name">Name</label><br>
                                 <input type="text" id="name" name="name" required><br>
                                 <label for="email">Email Adress</label><br>
@@ -127,7 +121,7 @@
                                 <input type="number" id="phone-number" name="phone-number" required><br>
                                 <label for="message">Message</label><br>
                                 <textarea name="message" id="message" cols="30" rows="5"></textarea><br>
-                                <a class="btn" href="#">Send</a>
+                                <a class="btn mb-10" href="#">Send</a>
                               </form>
                         </div>
                     </div>
@@ -140,10 +134,10 @@
     <!-- /main -->
 
     <!-- footer -->
-    <footer class="txt-white">
+    <footer id="footer_">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-3 col-sm-offset-1">
                     <h5>LOCATION</h5>
                     <h5>2215 John Daniel Drive Clark, MO 54243</h5>
                 </div>
@@ -178,9 +172,14 @@
     
     <!-- copyright -->
     <div id="copyright" class="txt-white">
-        <h6>Copyright Yor Website 2019</h6>
+        <h5>Copyright &#xa9; Your Website 2019</h5>
     </div>
     <!--/copyright -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
 </body>
 </html>
