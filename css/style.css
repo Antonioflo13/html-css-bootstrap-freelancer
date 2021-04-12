@@ -50,14 +50,20 @@ body {
     background-color: #72767A;
 }
 
-.ms-navbar.navbar-brand,
-.ms-navbar.navbar-nav>li>a {
+.ms_navbar.navbar>.container .navbar-brand,
+.ms_navbar.navbar-nav>li>a {
     color: white;
 }
-
-.ms-navbar.navbar-nav>li>a {
+.ms_navbar.navbar-inverse .navbar-nav>.active>a {
+    background-color: transparent;
     font-size: 12px;
 }
+
+.ms_navbar.navbar-inverse .navbar-nav>.active:hover a {
+    background-color: black;
+    color: #1BBC9C;
+}
+
 /* jumbotron */
 #jumbotron {
     padding-top: 70px;
