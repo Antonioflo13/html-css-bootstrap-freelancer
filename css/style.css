@@ -7,6 +7,10 @@ hr {
     border: 1px solid;
 }
 
+h1 {
+    font-size: 25px;
+}
+
 h1,
 h2,
 h3,
@@ -23,8 +27,7 @@ h6 {
     margin-bottom: 10px;
 }
 
-.btn {
-    padding: 5px 10px;
+.ms_btn {
     border: 1px solid white;
     color: white;
     background-color: #1BBC9C;
@@ -85,9 +88,39 @@ body {
 }
 
 img {
+    position: relative;
     width: 100%;
     margin: 10px 0 10px 0;
     border-radius: 10px;
+}
+.ms_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1;
+    width: 50%;
+    height: 50%;
+    border-radius: 60px;
+    transition: 1s;
+}
+
+.ms_overlay:hover
+ {
+    background-color: rgba(59, 84, 111, 0.8);
+}
+
+.ms_plus {
+    display: none;
+}
+.ms_overlay:hover .ms_plus {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 35px;
+    color: white;
 }
 /* about */
 #about {
