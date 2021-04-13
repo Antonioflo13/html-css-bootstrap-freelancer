@@ -136,14 +136,12 @@ img {
 }
 
 label {
-    text-align: left;
     margin-top: 20px;
     color: #53616F;
 }
 
 input,
 textarea {
-    text-align: left;
     border-bottom: 1px solid #53616F ;
     border-top: none;
     border-left: none;
@@ -166,13 +164,26 @@ textarea {
     color: #1BBC9C;
 }
 
-.list-inline li a{
+.list-inline li {
     display: inline-block;
+    line-height: 35px;
+    width: 40px;
+    height: 40px;
     border: 1px solid white;
-    margin-top: 5px;
-    padding: 8px 13px;
-    border-radius: 20px;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.list-inline a {
+    vertical-align: middle;
     color: white;
+}
+
+.list-inline li:hover{
+    background-color: white;
+}
+.list-inline li:hover a {
+    color: #3B546F;
 }
 
 #copyright {
